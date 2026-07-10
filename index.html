@@ -4,32 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 style="color:DodgerBlue;">About Me</h1>
+        <h1>About Me</h1>
     </header>
+    <video width="320" height="240" autoplay unmuted loop>
+  <source src="uploads/my_web.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
     <main>
         <section> 
             <article>
-        <img src="uploads/about.png" alt="my logo">
+        <img src="uploads/about.png"alt="my logo">
         <p>My name is <b>Muhammad Ahmad</b>
             I am a student of BS <b>Information Technology</b> 
             I am interested in <b> cybersecurity and ethical hacking.</b> </p>
-            <hr>
+    
             </article>
         </section>
         <hr>
         <section>
-<h2 style="color:red;">My Social Media Profiles</h2>
+<h1>My Social Media Profiles</h1>
 <img src="uploads/logo.jpg" height="100" width="100" alt="my logo">
 <br>
-<button><p><a style="color:black;" href="https://github.com/Ahmiiii250"> <b> Visit My Github Profile</b> </a></p> </button>
- <button><p><a style="color:black;" href="https://www.linkedin.com/in/muhammad-ahmad-5997a9338/"> <b>Visit My LinkedIn Profile </b></a></p> </button>
+<button><p><a href="https://github.com/Ahmiiii250"> <b> Visit My Github Profile</b> </a></p> </button>
+ <button><p><a href="https://www.linkedin.com/in/muhammad-ahmad-5997a9338/"> <b>Visit My LinkedIn Profile </b></a></p> </button>
   </section>
  <hr>
  <nav> 
-    <a href="education.html">View My Educational Information</a><br> </nav>
+
+
+
+<a href="#" onclick="playAndOpen()">
+    View My Educational Information
+</a>
+<audio id="audio">
+    <source src="uploads/sound.mp3" type="audio/mpeg">
+</audio>
+<script>
+function playAndOpen() {
+    let audio = document.getElementById("audio");
+    audio.play();
+    setTimeout(function() {
+        window.location.href = "education.html";
+    }, 1000); // 1000 ms = 1 second
+}
+</script>
   <nav>   <a href="skill.html">View My Skills</a><br> </nav>
    <nav>  <a href="project.html">View My Projects</a><br> </nav>
     <nav> <a href="resume.html">View My Resume</a><br> </nav>
@@ -37,8 +60,10 @@
     <nav> <a href="contact.html">Contact Me</a>
  
    <footer>
-        <p>&copy; 2026 Muhammad Ahmad | All Rights Reserved</p>
-    </footer>
+    <p>&copy; 2026 Muhammad Ahmad | All Rights Reserved</p>
+
+  
+</footer>
 </body>
 <!-- This is a comment -->
 </html>

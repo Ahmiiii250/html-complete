@@ -25,3 +25,31 @@ body{
 
     background-size:40px 40px,40px 40px,auto,auto,auto;
 }
+h1, h2{ 
+    text-align: center;
+    text-decoration: underline;
+}
+a { 
+    text-decoration: none;
+}
+#one {
+    align-content: center;
+}
+ * {
+    padding: 0;
+    margin: 0;
+    color: rgb(237, 59, 59)
+ }
+ #navbar {
+    height: 50px;
+    background-color: #333;
+ }
+ #logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 34, 9);
+    padding: 10px;
+ }
+ a {
+   margin-right: 10px;
+ }
